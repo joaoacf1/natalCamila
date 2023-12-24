@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: merienda;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(3, 3, 39);
+  /* height: 100vh; */
+
+}
+
+#container {
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+} 
+
+#card {
+  /* width: 100%; */
+  /* height: 100vh; */
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  transition: all 3s;
+}
+
+.face {
+  /* width: 200rem; */
+  /* height: 100vh; */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 200px; */
+  height: 100vh;
+
+}
+
+#front {
+  background-color: green;
+  transform: rotateY(180deg);
+  background-image: url(assets/fundo.gif);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+}
+
+#button {
+  width: 30rem;
+  height: 30rem;
+  /* background-color: blueviolet; */
+  background-image: url(assets/button.gif);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#button:hover {
+  cursor: pointer;
+}
+
+p {
+  color: rgb(255, 0, 21);
+  font-size: 50px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);  ;
+}
+
+
+#back {
+  /* background-color: pink; */
+  background-image: url(assets/gatinha.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 55vh;
+}
+
+#boas-festas {
+  background-image: url(assets/boas-festas.gif);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 12rem;
+  height: 15rem;
+  position: absolute;
+  bottom: 3rem;
+  right: 0.2rem;
+}
+
+#gatinha {
+  background-image: url(assets/gatinha2.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 14rem;
+  height: 11rem;
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+}
+
+#feliz-natal-container {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#feliz-natal{
+  color: blueviolet;
+}
+
+.flip { 
+  transform: rotateY(180deg);
+}
